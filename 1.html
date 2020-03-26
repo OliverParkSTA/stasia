@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+      function setColor(color)
+      {
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while(i < alist.length){
+          console.log(alist[i]);
+          alist[i].style.color = color;
+        i = i + 1;
+        }
+      }
+      function nightDayHandler(self){
+      var target = document.querySelector('body');
+        if(self.value === 'night'){
+            target.style.backgroundColor = 'black';
+            target.style.color = 'white';
+            self.value = 'day';
+
+              serColor('powderblue');
+        } else {
+            target.style.backgroundColor = 'white';
+            target.style.color = 'black';
+            self.value = 'night'
+              var alist = document.querySelectorAll('a');
+              var i = 0;
+              while(i < alist.length){
+                console.log(alist[i]);
+                alist[i].style.color = 'blue';
+                i = i + 1;
+              }
+        }
+      }
+    </script>
+    <style media="screen">
+      .JSS{
+        font-weight:bold;
+        color:red;
+      }
+      #hjj{
+        color:green;
+      }
+      span{
+        color:blue;
+      }
+    </style>
+    <title></title>
+  </head>
+  <body style="background-color:white">
+    <input type="button" name="" value="night" onclick="
+    nightDayHandler(this);
+    ">
+    <input type="button" name="" value="night" onclick="
+    nightDayHandler(this);
+    ">
+    <h1 style="background-color:coral; color:powderblue">JavaScript</h1>
+    <li> <a href = "1.html">Experience 01</a></li>
+    <li><a href="2.html">Experience 02</a></li>
+    <li><a href="3.html">Experience 03</a></li>
+    
+    <p>
+      Why Study <span id="hjj" class="JSS">JavaScript?</span><p></p>
+      <spin class="JSS">JavaScript</spin>
+      is one of the 3 languages all web developers must learn:
+      1. <span>HTML</span> to define the content of web pages
+      2. <span>CSS</span> to specify the layout of web pages
+      3. JavaScript to program the behavior of web pages
+      Web pages are not the only place where JavaScript is used.
+      Many desktop and server programs use JavaScript.
+      Node.js is the best known.
+      Some databases, like MongoDB and CouchDB,
+      also use JavaScript as their programming language.
+    </p>
+
+
+  </body>
+</html>
